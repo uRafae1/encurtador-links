@@ -20,3 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/admpage', function (){
+    return view('admpage');
+})->name('admpage');
+
+Route::get('/histopage', function (){
+    return view('histopage');
+})->name('histopage');
